@@ -1,5 +1,8 @@
 [phases.setup]
-aptPackages = ["libffi-dev", "libopus-dev"]
+# Using Nixpacks v2, aptPackages is deprecated in favor of packages
+# These are the NixOS package equivalents for libffi-dev and libopus-dev
+packages = ["libffi", "opus", "pkg-config"]
 
 [start]
-cmd = "python main.py"
+# Explicitly use the python version defined in runtime.txt
+cmd = "python3.11 main.py"
