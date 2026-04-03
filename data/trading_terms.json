@@ -1,0 +1,22 @@
+{
+  "pip": {
+    "definition": "A pip (percentage in point) is the smallest price move in a currency pair. For most pairs, it's 0.0001.",
+    "example": "If EUR/USD moves from 1.0850 to 1.0851, it has moved 1 pip."
+  },
+  "lot": {
+    "definition": "A lot is a standard unit of currency in forex trading. 1 standard lot = 100,000 units of the base currency.",
+    "example": "1 standard lot of EUR/USD = 100,000 EUR"
+  },
+  "spread": {
+    "definition": "The spread is the difference between the bid price and the ask price of a currency pair.",
+    "example": "If EUR/USD bid is 1.0850 and ask is 1.0852, the spread is 2 pips."
+  },
+  "leverage": {
+    "definition": "Leverage allows you to control a large position with a small amount of capital.",
+    "example": "With 1:100 leverage, you can control $100,000 with just $1,000."
+  },
+  "margin": {
+    "definition": "Margin is the amount of money required to open and maintain a trading position.",
+    "example": "With 1% margin requirement, you need $1,000 to control a $100,000 position."
+  }
+}
