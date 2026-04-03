@@ -1,0 +1,5 @@
+[phases.setup]
+aptPackages = ["libffi-dev", "libopus-dev"]
+
+[start]
+cmd = "python main.py"
