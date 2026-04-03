@@ -1,8 +1,12 @@
+# Nixpacks configuration for Railway deployment
+# Docs: https://nixpacks.com/docs/configuration/file
+
 [phases.setup]
-# Using Nixpacks v2, aptPackages is deprecated in favor of packages
-# These are the NixOS package equivalents for libffi-dev and libopus-dev
-packages = ["libffi", "opus", "pkg-config"]
+# Install system-level dependencies required by discord.py and PyNaCl
+# Using aptPkgs for apt-get based installation
+aptPkgs = ['...', 'libffi-dev', 'libsodium-dev']
 
 [start]
-# Explicitly use the python version defined in runtime.txt
-cmd = "python3.11 main.py"
+# Nixpacks automatically uses the Python version from runtime.txt
+# The venv python binary is used, so just "python" is correct
+cmd = "python main.py"
