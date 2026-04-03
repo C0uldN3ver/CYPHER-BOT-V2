@@ -82,8 +82,8 @@ class CypherBot(commands.Bot):
         logger.info("📂 Loading stable cogs...")
         
         # Explicit list of stable cogs to load
-        # Removed problematic cogs (liquidity_heatmap, orderflow_walls, alpha_intelligence)
-        # Corrected typo (StatEngine -> stats_engine)
+
+
         stable_cogs = [
             "moderation",
             "graduation",
@@ -95,7 +95,7 @@ class CypherBot(commands.Bot):
             "inactivity",
             "cypher_ai",
             "crypto_news",
-            "stats_engine", # Corrected name
+            "stats_engine",
             "trading_terms",
             "welcome"
         ]
